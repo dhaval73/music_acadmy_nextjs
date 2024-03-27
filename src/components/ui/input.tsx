@@ -37,7 +37,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
         onMouseLeave={() => setVisible(false)}
         className="p-[2px] rounded-lg transition duration-300 group/input"
       >
-        {type !== "textarea" ? 
+       
         <input
           type={type}
           className={cn(
@@ -52,22 +52,8 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           )}
           ref={ref}
           {...props}
-        />:
-        <textarea
-        type={type}
-        className={cn(
-          `flex h-10 w-full border-none bg-gray-50 dark:bg-zinc-800 text-black dark:text-white  rounded-md px-3 py-2 text-sm
-         placeholder:text-neutral-400 dark:placeholder-text-neutral-600 
-         disabled:cursor-not-allowed disabled:opacity-50
-         group-hover/input:shadow-none transition duration-400 focus-visible:outline-blue-500/20  outline-none
-         `,
-          className
-        )}
-        ref={ref}
-        {...props}
-      ></textarea>
-          }
-
+        /> 
+        
       </motion.div>
     );
   }

@@ -4,6 +4,7 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/utils/cn";
 import { BackgroundBeams } from "@/components/ui/background-beams";
+import { Textarea } from "@/components/ui/textarea";
 
 function ContactPage() {
   return (
@@ -35,9 +36,10 @@ function ContactPage() {
           <div className="flex mb-4">        
           <LabelInputContainer className="">
             <Label htmlFor="Subject">Subject</Label>
-            <Input id="Subject"
-              className="h-20 resize-none"
-              type="textarea" />
+            <Textarea 
+            id="Subject"
+            className="h-20 resize-none"
+             />
           </LabelInputContainer>
           </div>        
 
